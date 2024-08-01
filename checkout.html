@@ -1,0 +1,200 @@
+<!--navbar-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+                <a class="navbar-brand pl-5 pl-small-0" href="index.html">
+                    <img src="assets\images\shopping-venture-4264939_1280.jpg" class="img img-fluid" width="120px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="search mr-3">
+                        <a href="search.html" class="btn btn-sm btn-outline-primary">
+                            Search
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                            <span class="badge badge-pill badge-primary">24</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--checkout details-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="assets/css/checkout.css">
+</head>
+<body>
+    <div class="checkout-container mt-2 mb-2">
+        
+        <h2>Checkout</h2>
+        <div class="form-container">
+            <div class="billing-details">
+                <h3>Billing details</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="">Choose your option</option>
+                            <option value="1">India</option>
+                             <option value="2">usa</option>
+                              <option value="3">canada</option>
+
+                            <!-- Add more options here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="address-line-1">Address Line 1</label>
+                        <input type="text" id="address-line-1" name="address-line-1">
+                    </div>
+                    <div class="form-group">
+                        <label for="address-line-2">Address Line 2</label>
+                        <input type="text" id="address-line-2" name="address-line-2" placeholder="Apartment, suite, unit etc. (optional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="postcode">Postcode / ZIP</label>
+                        <input type="text" id="postcode" name="postcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Town / City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="additional-info">Additional information</label>
+                        <textarea id="additional-info" name="additional-info"></textarea>
+                    </div>
+                   <!-- <a href="order_confirmation.html">
+                        <button type="submit" class="btn btn-primary">Purchase</button>
+                    </a> -->
+
+                    <div class="text-center">
+                        <a href="order_confirmation.html" class="btn btn-primary">
+                        <i class="fa fa-check mr-2"></i>Purchase
+                        </a>
+                        </div>
+                        
+                </form>
+            </div>
+            <div class="order-summary">
+                <h3>Order summary</h3>
+                <p>Product name 1 <span>x2</span> <span>₹25.98</span></p>
+                <p>Product name 2 <span>x2</span> <span>₹25.98</span></p>
+                <p><strong>Total amount (including VAT)</strong> <span>₹53.98</span></p>
+            </div>
+        </div>
+    </div>
+
+<!--footer-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="assets\images\shopping-venture-4264939_1280.jpg" alt="The Demo Company Logo" class="footer-logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Impedit, totam est illum ipsum quas ad dignissimos magni veritatis natus voluptatem.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Offers & Discounts</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>New Products</h4>
+                <ul>
+                    <li><a href="#">Woman Cloth</a></li>
+                    <li><a href="#">Fashion Accessories</a></li>
+                    <li><a href="#">Man Accessories</a></li>
+                    <li><a href="#">Rubber made Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Report a Payment Issue</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2020 All rights reserved</p>
+        </div>
+
+        <div class="backtop">
+           <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+           <i class="fas fa-chevron-up text-dark"></i>
+           </a>
+           </div>
+    </footer>
+
+</body>
+</body>
+</html>
